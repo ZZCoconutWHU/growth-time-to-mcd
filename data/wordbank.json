@@ -1,0 +1,916 @@
+{
+  "meta": {
+    "name": "CET-4 高频核心词",
+    "description": "从历年 CET-4 真题词频中筛选的高频核心词，适合等餐碎片时间刷词。",
+    "level": "CET4",
+    "count": 151
+  },
+  "words": [
+    {
+      "en": "abandon",
+      "zh": "放弃；抛弃",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "ability",
+      "zh": "能力；才能",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "abroad",
+      "zh": "在国外；到国外",
+      "pos": "ad.",
+      "level": "CET4"
+    },
+    {
+      "en": "absent",
+      "zh": "缺席的；不在的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "absorb",
+      "zh": "吸收；使专注",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "accept",
+      "zh": "接受；同意",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "access",
+      "zh": "接近；进入；使用权",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "accident",
+      "zh": "意外；事故",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "account",
+      "zh": "账户；描述；解释",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "achieve",
+      "zh": "实现；达到",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "acquire",
+      "zh": "获得；习得",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "active",
+      "zh": "活跃的；积极的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "adapt",
+      "zh": "适应；改编",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "adequate",
+      "zh": "充足的；适当的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "adjust",
+      "zh": "调整；适应",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "admire",
+      "zh": "钦佩；欣赏",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "admit",
+      "zh": "承认；准许进入",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "adopt",
+      "zh": "采用；收养",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "advance",
+      "zh": "前进；推进；进步",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "advantage",
+      "zh": "优势；好处",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "advise",
+      "zh": "劝告；建议",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "afford",
+      "zh": "负担得起；提供",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "agency",
+      "zh": "代理；机构",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "alarm",
+      "zh": "警报；惊恐",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "album",
+      "zh": "相册；专辑",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "alcohol",
+      "zh": "酒精；酒",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "alert",
+      "zh": "警觉的；警报",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "alike",
+      "zh": "相似的；同样地",
+      "pos": "a./ad.",
+      "level": "CET4"
+    },
+    {
+      "en": "alive",
+      "zh": "活着的；活跃的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "allow",
+      "zh": "允许；准许",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "alone",
+      "zh": "独自的；仅仅",
+      "pos": "a./ad.",
+      "level": "CET4"
+    },
+    {
+      "en": "amaze",
+      "zh": "使惊奇",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "analyze",
+      "zh": "分析",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "ancient",
+      "zh": "古代的；古老的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "announce",
+      "zh": "宣布；宣告",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "anxious",
+      "zh": "焦虑的；渴望的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "apart",
+      "zh": "分开；相隔",
+      "pos": "ad./a.",
+      "level": "CET4"
+    },
+    {
+      "en": "apologize",
+      "zh": "道歉",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "apparent",
+      "zh": "明显的；表面的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "appeal",
+      "zh": "呼吁；吸引；上诉",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "appear",
+      "zh": "出现；似乎",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "apply",
+      "zh": "申请；应用",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "appreciate",
+      "zh": "欣赏；感激",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "approach",
+      "zh": "接近；方法；途径",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "approve",
+      "zh": "批准；赞成",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "argue",
+      "zh": "争论；主张",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "arise",
+      "zh": "出现；升起",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "article",
+      "zh": "文章；物品；条款",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "aspect",
+      "zh": "方面；面貌",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "assist",
+      "zh": "帮助；协助",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "assume",
+      "zh": "假定；承担",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "attack",
+      "zh": "攻击；进攻",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "attend",
+      "zh": "出席；照料",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "attract",
+      "zh": "吸引；引起",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "audience",
+      "zh": "观众；听众",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "author",
+      "zh": "作者；作家",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "automatic",
+      "zh": "自动的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "available",
+      "zh": "可获得的；有空的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "average",
+      "zh": "平均的；平均数",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "avoid",
+      "zh": "避免；回避",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "awake",
+      "zh": "醒着的；唤醒",
+      "pos": "a./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "award",
+      "zh": "颁发；奖",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "aware",
+      "zh": "意识到的；知道的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "balance",
+      "zh": "平衡；权衡",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "bargain",
+      "zh": "便宜货；讨价还价",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "basic",
+      "zh": "基本的；基础的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "benefit",
+      "zh": "益处；受益",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "blame",
+      "zh": "责备；责任",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "bold",
+      "zh": "大胆的；粗体的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "boost",
+      "zh": "推动；提高",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "boundary",
+      "zh": "边界；界限",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "brief",
+      "zh": "简短的；简要",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "broadcast",
+      "zh": "广播；播送",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "broad",
+      "zh": "宽阔的；广泛的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "burden",
+      "zh": "负担；重负",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "calculate",
+      "zh": "计算；推算",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "campus",
+      "zh": "校园",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "cancel",
+      "zh": "取消；撤销",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "candidate",
+      "zh": "候选人；应试者",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "capital",
+      "zh": "首都；资本；大写",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "capture",
+      "zh": "捕获；占领",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "carbon",
+      "zh": "碳",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "casual",
+      "zh": "偶然的；随意的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "ceremony",
+      "zh": "典礼；仪式",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "challenge",
+      "zh": "挑战；质疑",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "champion",
+      "zh": "冠军；拥护",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "channel",
+      "zh": "频道；渠道；海峡",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "character",
+      "zh": "性格；角色；字符",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "charge",
+      "zh": "收费；负责；充电",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "cheer",
+      "zh": "欢呼；使高兴",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "choice",
+      "zh": "选择；选择权",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "citizen",
+      "zh": "公民；市民",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "civil",
+      "zh": "公民的；民用的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "claim",
+      "zh": "声称；要求；索赔",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "classic",
+      "zh": "经典的；名著",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "client",
+      "zh": "客户；委托人",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "climate",
+      "zh": "气候；风气",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "clever",
+      "zh": "聪明的；机灵的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "colleague",
+      "zh": "同事",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "combine",
+      "zh": "结合；联合",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "comfort",
+      "zh": "安慰；舒适",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "command",
+      "zh": "命令；掌握",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "comment",
+      "zh": "评论；意见",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "commit",
+      "zh": "犯（错）；承诺；投入",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "community",
+      "zh": "社区；群体",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "compare",
+      "zh": "比较；比喻",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "compete",
+      "zh": "竞争；比赛",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "complain",
+      "zh": "抱怨；投诉",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "complex",
+      "zh": "复杂的；综合体",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "compose",
+      "zh": "组成；创作",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "concept",
+      "zh": "概念；观念",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "concern",
+      "zh": "关心；涉及；担忧",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "conclude",
+      "zh": "结论；结束",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "conduct",
+      "zh": "进行；行为；导电",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "confess",
+      "zh": "承认；坦白",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "confident",
+      "zh": "自信的；确信的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "confirm",
+      "zh": "确认；证实",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "conflict",
+      "zh": "冲突；矛盾",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "confuse",
+      "zh": "使困惑；混淆",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "consist",
+      "zh": "由…组成；在于",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "constant",
+      "zh": "不断的；恒定的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "construct",
+      "zh": "建造；构筑",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "consult",
+      "zh": "咨询；查阅",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "consume",
+      "zh": "消耗；消费",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "contact",
+      "zh": "联系；接触",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "contain",
+      "zh": "包含；容纳",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "content",
+      "zh": "内容；满意的",
+      "pos": "n./a.",
+      "level": "CET4"
+    },
+    {
+      "en": "contribute",
+      "zh": "贡献；投稿",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "control",
+      "zh": "控制；管理",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "convince",
+      "zh": "使信服；说服",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "cooperate",
+      "zh": "合作；协作",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "cope",
+      "zh": "应付；处理",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "corporate",
+      "zh": "公司的；法人的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "council",
+      "zh": "委员会；理事会",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "count",
+      "zh": "数；计算；重要",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "courage",
+      "zh": "勇气；胆量",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "create",
+      "zh": "创造；创作",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "credit",
+      "zh": "信用；学分；赞扬",
+      "pos": "n./v.",
+      "level": "CET4"
+    },
+    {
+      "en": "crisis",
+      "zh": "危机；危急关头",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "critical",
+      "zh": "关键的；批评的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "culture",
+      "zh": "文化；教养",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "curious",
+      "zh": "好奇的；奇特的",
+      "pos": "a.",
+      "level": "CET4"
+    },
+    {
+      "en": "current",
+      "zh": "当前的；水流；电流",
+      "pos": "a./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "decade",
+      "zh": "十年",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "decide",
+      "zh": "决定；裁决",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "declare",
+      "zh": "宣布；声明",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "defeat",
+      "zh": "击败；失败",
+      "pos": "v./n.",
+      "level": "CET4"
+    },
+    {
+      "en": "defend",
+      "zh": "防守；辩护",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "define",
+      "zh": "定义；界定",
+      "pos": "v.",
+      "level": "CET4"
+    },
+    {
+      "en": "degree",
+      "zh": "程度；学位；度数",
+      "pos": "n.",
+      "level": "CET4"
+    },
+    {
+      "en": "delay",
+      "zh": "推迟；耽搁",
+      "pos": "v./n.",
+      "level": "CET4"
+    }
+  ]
+}

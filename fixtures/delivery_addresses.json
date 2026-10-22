@@ -1,0 +1,8 @@
+{
+  "data": {
+    "addresses": [
+      {"id": "1", "address": "示例市示例区示例路100号（演示数据）", "isDefault": true},
+      {"id": "2", "address": "示例市示例区示例街8号（演示数据）", "isDefault": false}
+    ]
+  }
+}

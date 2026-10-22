@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "growth-time-to-mcd"
+version = "1.0.0"
+description = "麦麦成长时刻：把去麦当劳的路和等麦当劳的时间，变成单词、里程与达标的一餐"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Time to McDonald Contributors" }]
+keywords = ["mcdonalds", "mcp", "nutrition", "vocabulary", "workbuddy"]
+
+[project.urls]
+Homepage = "https://github.com/"
+
+[project.scripts]
+growth-time-to-mcd = "time_to_mcd.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

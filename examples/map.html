@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦当劳(示例·中心广场店) · 通勤路线</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  #map { width: 100%; height: 100vh; }
+  .panel {
+    position: absolute; left: 16px; top: 16px; z-index: 10;
+    background: rgba(255,255,255,.96); border-radius: 12px; padding: 14px 16px;
+    box-shadow: 0 6px 22px rgba(0,0,0,.14); min-width: 240px; max-width: 320px;
+    color: #1b1b1b; font-size: 13px; line-height: 1.6;
+  }
+  .panel h1 { margin: 0 0 8px; font-size: 15px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .k { color: #6b6b6b; }
+  .v { font-weight: 600; }
+  .kcal { color: #c8102e; font-weight: 700; font-size: 18px; }
+  .badge { display:inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px;
+           background:#fff1f0; color:#c8102e; margin-top:6px; }
+  .tip { margin-top: 8px; color: #8a8a8a; font-size: 11px; line-height: 1.5; }
+</style>
+<!-- 密钥代理模式：无需在前端暴露 Key，由 WorkBuddy 运行时注入 -->
+<script type="text/javascript">
+  window._TMapSecurityConfig = {
+    serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
+  };
+</script>
+<script src="https://map.qq.com/api/gljs?v=1.exp"></script>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+  <h1>麦当劳(示例·中心广场店)</h1>
+  <div class="row"><span class="k">起点</span><span class="v">示例市示例区示例路100号</span></div>
+  <div class="row"><span class="k">路程</span><span class="v">400 m · 5.3 分钟</span></div>
+  <div class="row"><span class="k">方式</span><span class="v">步行</span></div>
+  <div class="row"><span class="k">预计消耗</span><span class="kcal">23 kcal</span></div>
+  <span class="badge">距离为估算值，配置地图 Key 可得真实路线</span>
+  <div class="tip">未配置地图 Key，路线按门店距离估算，仅示意。</div>
+</div>
+<script>
+var routePoints = [];
+var center = new TMap.LatLng(31.223720, 121.445310);
+var map = new TMap.Map('map', { zoom: 15, center: center });
+
+var markerStyle = new TMap.MarkerStyle({
+  width: 24, height: 32,
+  anchor: { x: 12, y: 32 },
+  src: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32"><path fill="#c8102e" d="M12 0C5.4 0 0 5.4 0 12c0 8 12 20 12 20s12-12 12-20c0-6.6-5.4-12-12-12z"/><circle cx="12" cy="12" r="4.5" fill="#fff"/></svg>')
+});
+
+var geometries = [{ id: 'store', styleId: 'default', position: center }];
+if (routePoints.length > 1) {
+  var start = routePoints[0];
+  geometries.push({ id: 'start', styleId: 'default', position: new TMap.LatLng(start.lat, start.lng) });
+}
+new TMap.MultiMarker({ map: map, styles: { default: markerStyle }, geometries: geometries });
+
+if (routePoints.length > 1) {
+  var path = routePoints.map(function (p) { return new TMap.LatLng(p.lat, p.lng); });
+  new TMap.MultiPolyline({
+    map: map,
+    styles: {
+      route: new TMap.PolylineStyle({ color: '#c8102e', width: 6, lineCap: 'round', showArrow: true })
+    },
+    geometries: [{ id: 'route', styleId: 'route', paths: path }]
+  });
+  map.fitBounds(new TMap.LatLngBounds(path), { padding: 90 });
+}
+</script>
+</body>
+</html>

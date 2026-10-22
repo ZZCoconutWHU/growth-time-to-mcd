@@ -1,0 +1,24 @@
+{
+  "data": {
+    "orders": [
+      {
+        "orderId": "DEMO2026102200128",
+        "statusText": "制作中",
+        "createTime": "{{now-6m}}",
+        "promiseTime": "{{now+7m}}",
+        "storeName": "麦当劳(示例·中心广场店)",
+        "mode": "到店取餐",
+        "totalAmount": "44.00"
+      },
+      {
+        "orderId": "DEMO2026101900093",
+        "statusText": "已完成",
+        "createTime": "{{now-4320m}}",
+        "promiseTime": "{{now-4300m}}",
+        "storeName": "麦当劳(示例·地铁口店)",
+        "mode": "麦乐送",
+        "totalAmount": "38.00"
+      }
+    ]
+  }
+}

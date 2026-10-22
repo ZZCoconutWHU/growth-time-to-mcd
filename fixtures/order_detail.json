@@ -1,0 +1,18 @@
+{
+  "data": {
+    "orderId": "DEMO2026102200128",
+    "statusText": "制作中",
+    "createTime": "{{now-6m}}",
+    "promiseTime": "{{now+7m}}",
+    "storeName": "麦当劳(示例·中心广场店)",
+    "storeCode": "DEMO0001",
+    "mode": "到店取餐",
+    "pickupCode": "A128",
+    "totalAmount": "44.00",
+    "items": [
+      {"name": "巨无霸", "qty": 1},
+      {"name": "中薯条", "qty": 1},
+      {"name": "中杯无糖可乐", "qty": 1}
+    ]
+  }
+}

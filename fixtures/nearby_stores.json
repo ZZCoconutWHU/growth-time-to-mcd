@@ -1,0 +1,70 @@
+{
+  "data": {
+    "stores": [
+      {
+        "storeCode": "DEMO0001",
+        "storeName": "麦当劳(示例·中心广场店)",
+        "address": "示例市示例区示例路100号B1层（演示数据）",
+        "distance": 320,
+        "businessTime": "07:00-23:00",
+        "status": "营业中",
+        "services": [
+          "堂食",
+          "外带",
+          "麦乐送"
+        ],
+        "cityName": "示例市",
+        "latitude": 31.2237,
+        "longitude": 121.4453
+      },
+      {
+        "storeCode": "DEMO0002",
+        "storeName": "麦当劳(示例·地铁口店)",
+        "address": "示例市示例区示例街8号地铁1号口（演示数据）",
+        "distance": 680,
+        "businessTime": "06:30-24:00",
+        "status": "营业中",
+        "services": [
+          "堂食",
+          "外带",
+          "得来速",
+          "麦乐送"
+        ],
+        "cityName": "示例市",
+        "latitude": 31.2244,
+        "longitude": 121.4471
+      },
+      {
+        "storeCode": "DEMO0003",
+        "storeName": "麦当劳(示例·步行街店)",
+        "address": "示例市示例区示范路1266号（演示数据）",
+        "distance": 1200,
+        "businessTime": "24小时",
+        "status": "营业中",
+        "services": [
+          "堂食",
+          "外带"
+        ],
+        "cityName": "示例市",
+        "latitude": 31.2299,
+        "longitude": 121.4529
+      },
+      {
+        "storeCode": "DEMO0004",
+        "storeName": "麦当劳(示例·滨江路店)",
+        "address": "示例市示例区范例路1399号（演示数据）",
+        "distance": 2400,
+        "businessTime": "07:00-22:00",
+        "status": "休息中",
+        "services": [
+          "堂食",
+          "外带",
+          "麦乐送"
+        ],
+        "cityName": "示例市",
+        "latitude": 31.2335,
+        "longitude": 121.4411
+      }
+    ]
+  }
+}

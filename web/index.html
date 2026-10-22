@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦麦成长时刻 · Time to McDonald's</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== 像素图标库（16x16 硬边） ===================== -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-burger" viewBox="0 0 16 16">
+      <rect x="3" y="2" width="10" height="1" fill="#F2A93B"/><rect x="2" y="3" width="12" height="2" fill="#FFC72C"/>
+      <rect x="4" y="3" width="1" height="1" fill="#FFF3D0"/><rect x="8" y="2" width="1" height="1" fill="#FFF3D0"/><rect x="11" y="3" width="1" height="1" fill="#FFF3D0"/>
+      <rect x="2" y="5" width="12" height="1" fill="#6DBE45"/><rect x="1" y="6" width="14" height="1" fill="#FFD24A"/>
+      <rect x="3" y="7" width="2" height="1" fill="#FFD24A"/><rect x="7" y="7" width="2" height="1" fill="#FFD24A"/><rect x="11" y="7" width="2" height="1" fill="#FFD24A"/>
+      <rect x="2" y="7" width="12" height="2" fill="#6B3F1D"/><rect x="2" y="9" width="12" height="1" fill="#4E2B12"/>
+      <rect x="2" y="10" width="12" height="2" fill="#E4942F"/><rect x="3" y="12" width="10" height="1" fill="#E4942F"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" fill="#1B5E8C"/><rect x="4" y="3" width="9" height="10" fill="#FFF6E0"/>
+      <rect x="4" y="3" width="1" height="10" fill="#2E86C1"/><rect x="6" y="5" width="6" height="1" fill="#2E86C1"/>
+      <rect x="6" y="7" width="5" height="1" fill="#8A7A66"/><rect x="6" y="9" width="6" height="1" fill="#8A7A66"/><rect x="6" y="11" width="4" height="1" fill="#8A7A66"/>
+      <rect x="11" y="5" width="2" height="1" fill="#DA291C"/>
+    </symbol>
+    <symbol id="i-flame" viewBox="0 0 16 16">
+      <rect x="7" y="1" width="2" height="2" fill="#FFE08A"/><rect x="6" y="3" width="4" height="3" fill="#FFC72C"/>
+      <rect x="5" y="5" width="6" height="4" fill="#FF8A1F"/><rect x="6" y="9" width="4" height="4" fill="#FF5A1F"/>
+      <rect x="7" y="10" width="2" height="3" fill="#FFE08A"/><rect x="5" y="13" width="6" height="1" fill="#DA291C"/>
+    </symbol>
+    <symbol id="i-meat" viewBox="0 0 16 16">
+      <rect x="4" y="3" width="6" height="6" fill="#C9743A"/><rect x="3" y="4" width="8" height="4" fill="#D98A4E"/>
+      <rect x="5" y="3" width="4" height="2" fill="#E8A469"/><rect x="4" y="8" width="6" height="1" fill="#A85C28"/>
+      <rect x="9" y="6" width="2" height="3" fill="#FFF6E0"/><rect x="11" y="7" width="4" height="2" fill="#F2E4C8"/>
+      <rect x="13" y="6" width="2" height="1" fill="#FFF6E0"/><rect x="13" y="9" width="2" height="1" fill="#FFF6E0"/>
+    </symbol>
+    <symbol id="i-shoe" viewBox="0 0 16 16">
+      <rect x="2" y="9" width="12" height="4" fill="#DA291C"/><rect x="2" y="12" width="12" height="1" fill="#2B1A0E"/>
+      <rect x="3" y="10" width="2" height="1" fill="#FFF6E0"/><rect x="8" y="10" width="2" height="1" fill="#FFF6E0"/>
+      <rect x="3" y="7" width="4" height="2" fill="#FFF6E0"/><rect x="7" y="5" width="3" height="4" fill="#FFC72C"/><rect x="7" y="4" width="3" height="1" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" fill="#2B1A0E"/><rect x="3" y="3" width="10" height="10" fill="#FFC72C"/>
+      <rect x="4" y="4" width="8" height="8" fill="#FFF6E0"/><rect x="7" y="5" width="1" height="4" fill="#2B1A0E"/>
+      <rect x="8" y="8" width="3" height="1" fill="#2B1A0E"/><rect x="7" y="2" width="2" height="1" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 16 16">
+      <rect x="7" y="1" width="2" height="14" fill="#FFC72C"/><rect x="1" y="7" width="14" height="2" fill="#FFC72C"/>
+      <rect x="4" y="3" width="8" height="10" fill="#FFD24A"/><rect x="5" y="4" width="6" height="8" fill="#FFE08A"/><rect x="6" y="6" width="4" height="4" fill="#FFF6E0"/>
+    </symbol>
+    <symbol id="i-brain" viewBox="0 0 16 16">
+      <rect x="4" y="3" width="8" height="9" fill="#FF9BB3"/><rect x="3" y="5" width="10" height="5" fill="#FFB3C6"/>
+      <rect x="5" y="4" width="3" height="3" fill="#FF7C9C"/><rect x="9" y="7" width="3" height="3" fill="#FF7C9C"/><rect x="4" y="12" width="8" height="2" fill="#FF7C9C"/><rect x="6" y="6" width="2" height="2" fill="#FFF6E0"/>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 16 16">
+      <rect x="6" y="3" width="4" height="1" fill="#8A7A66"/><rect x="5" y="4" width="1" height="3" fill="#8A7A66"/><rect x="10" y="4" width="1" height="3" fill="#8A7A66"/>
+      <rect x="4" y="7" width="8" height="6" fill="#A89680"/><rect x="4" y="7" width="8" height="1" fill="#C0AE96"/><rect x="7" y="9" width="2" height="3" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-fry" viewBox="0 0 16 16">
+      <rect x="4" y="3" width="2" height="7" fill="#FFC72C"/><rect x="7" y="2" width="2" height="8" fill="#FFD24A"/><rect x="10" y="3" width="2" height="7" fill="#FFC72C"/>
+      <rect x="3" y="9" width="10" height="6" fill="#DA291C"/><rect x="3" y="9" width="10" height="1" fill="#FFF6E0"/><rect x="5" y="11" width="6" height="2" fill="#FFC72C"/>
+    </symbol>
+    <symbol id="i-drink" viewBox="0 0 16 16">
+      <rect x="8" y="0" width="2" height="3" fill="#FFC72C"/><rect x="6" y="2" width="4" height="1" fill="#FFF6E0"/>
+      <rect x="5" y="3" width="6" height="10" fill="#DA291C"/><rect x="4" y="4" width="1" height="7" fill="#FFF6E0"/><rect x="11" y="4" width="1" height="7" fill="#FFF6E0"/><rect x="5" y="13" width="6" height="1" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-egg" viewBox="0 0 16 16">
+      <rect x="4" y="3" width="8" height="10" fill="#FFF6E0"/><rect x="3" y="5" width="10" height="6" fill="#FFF6E0"/><rect x="5" y="5" width="4" height="4" fill="#FFC72C"/><rect x="6" y="6" width="2" height="2" fill="#FF8A1F"/><rect x="4" y="13" width="8" height="1" fill="#E0D2B4"/>
+    </symbol>
+    <symbol id="i-scale" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="2" fill="#2B1A0E"/><rect x="3" y="4" width="10" height="2" fill="#FFC72C"/>
+      <rect x="2" y="6" width="3" height="8" fill="#2E86C1"/><rect x="11" y="6" width="3" height="8" fill="#2E86C1"/>
+      <rect x="5" y="8" width="6" height="2" fill="#FFF6E0"/><rect x="7" y="10" width="2" height="4" fill="#DA291C"/>
+    </symbol>
+    <symbol id="i-target" viewBox="0 0 16 16">
+      <rect x="6" y="1" width="4" height="14" fill="#DA291C"/><rect x="1" y="6" width="14" height="4" fill="#DA291C"/>
+      <rect x="7" y="2" width="2" height="12" fill="#FFC72C"/><rect x="2" y="7" width="12" height="2" fill="#FFC72C"/>
+      <rect x="6" y="6" width="4" height="4" fill="#FFF6E0"/>
+    </symbol>
+    <symbol id="i-route" viewBox="0 0 16 16">
+      <rect x="2" y="6" width="2" height="2" fill="#3FA34D"/><rect x="4" y="4" width="2" height="4" fill="#3FA34D"/>
+      <rect x="6" y="6" width="2" height="2" fill="#FFC72C"/><rect x="8" y="4" width="2" height="4" fill="#FFC72C"/>
+      <rect x="10" y="6" width="2" height="2" fill="#DA291C"/><rect x="12" y="4" width="2" height="4" fill="#DA291C"/>
+      <rect x="3" y="10" width="10" height="3" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 16 16">
+      <rect x="6" y="1" width="4" height="1" fill="#DA291C"/><rect x="5" y="2" width="6" height="1" fill="#DA291C"/>
+      <rect x="4" y="3" width="8" height="2" fill="#DA291C"/><rect x="3" y="5" width="10" height="3" fill="#DA291C"/>
+      <rect x="4" y="8" width="8" height="2" fill="#DA291C"/><rect x="6" y="10" width="4" height="2" fill="#DA291C"/>
+      <rect x="7" y="12" width="2" height="2" fill="#DA291C"/>
+      <rect x="6" y="4" width="4" height="4" fill="#FFF3D0"/><rect x="7" y="5" width="2" height="2" fill="#DA291C"/>
+      <rect x="2" y="14" width="12" height="1" fill="#2B1A0E"/>
+    </symbol>
+    <symbol id="i-sync" viewBox="0 0 16 16">
+      <rect x="2" y="6" width="6" height="1" fill="#FFC72C"/><rect x="2" y="7" width="1" height="2" fill="#FFC72C"/>
+      <rect x="3" y="4" width="2" height="2" fill="#FFC72C"/><rect x="3" y="9" width="2" height="2" fill="#FFC72C"/>
+      <rect x="8" y="6" width="6" height="1" fill="#3FA34D"/><rect x="13" y="7" width="1" height="2" fill="#3FA34D"/>
+      <rect x="11" y="4" width="2" height="2" fill="#3FA34D"/><rect x="11" y="9" width="2" height="2" fill="#3FA34D"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 16 16">
+      <rect x="5" y="1" width="6" height="1" fill="#2B1A0E"/><rect x="4" y="2" width="8" height="12" fill="#2B1A0E"/>
+      <rect x="5" y="3" width="6" height="9" fill="#FFC72C"/><rect x="6" y="12" width="4" height="1" fill="#FFF3D0"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- ===================== 顶栏 ===================== -->
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <div class="brand">
+      <svg class="arches" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="4" width="5" height="16" fill="#FFC72C"/><rect x="3" y="3" width="4" height="1" fill="#FFC72C"/>
+        <rect x="7" y="4" width="2" height="3" fill="#FFC72C"/><rect x="8" y="7" width="2" height="3" fill="#FFC72C"/>
+        <rect x="9" y="10" width="3" height="3" fill="#FFC72C"/><rect x="11" y="7" width="2" height="3" fill="#FFC72C"/>
+        <rect x="12" y="4" width="2" height="3" fill="#FFC72C"/><rect x="15" y="4" width="5" height="16" fill="#FFC72C"/><rect x="16" y="3" width="4" height="1" fill="#FFC72C"/>
+      </svg>
+      <div class="brand-txt">
+        <strong>麦麦成长时刻</strong>
+        <span>TIME TO MCDONALD'S</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="chip chip-fire"><svg class="ico"><use href="#i-flame"/></svg><span>连续 <b data-bind="streak">0</b> 天</span></div>
+      <div class="chip"><svg class="ico"><use href="#i-clock"/></svg><span>活跃 <b data-bind="active_days">0</b> 天</span></div>
+      <div class="chip chip-lv"><svg class="ico"><use href="#i-star"/></svg><span data-bind="level_title">见习麦友</span></div>
+      <button class="chip chip-sync" id="syncChip" title="手机 ↔ 电脑同步：点一下查看/立即同步">
+        <svg class="ico"><use href="#i-sync"/></svg><span id="syncChipText">同步</span>
+      </button>
+    </div>
+  </div>
+  <nav class="nav wrap">
+    <button class="nav-btn is-on" data-screen="dash"><svg class="ico"><use href="#i-burger"/></svg>看板</button>
+    <button class="nav-btn" data-screen="go"><svg class="ico"><use href="#i-route"/></svg>出发</button>
+    <button class="nav-btn" data-screen="words"><svg class="ico"><use href="#i-book"/></svg>等餐</button>
+    <button class="nav-btn" data-screen="meal"><svg class="ico"><use href="#i-target"/></svg>记录</button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== 看板屏 ===================== -->
+  <section class="screen is-on" id="screen-dash">
+
+    <!-- 旅程入口：整个场景从「我想去麦当劳」开始 -->
+    <div class="journey-cta">
+      <div class="jc-txt">
+        <strong>Time to McDonald</strong>
+        <span>找最近门店 → 按目标挑这一餐 → 去下单 → 回来等餐背单词</span>
+      </div>
+      <button class="btn btn-mc btn-lg" id="dashGoBtn">
+        <svg class="ico"><use href="#i-burger"/></svg>我想去麦当劳！
+      </button>
+    </div>
+
+    <section class="hero panel">
+      <div class="hero-txt">
+        <p class="kicker">WAITING TIME → GROWTH TIME</p>
+        <div class="hero-title-row">
+          <h1>等麦当劳的那几分钟<br><em>也能变成变强的时间</em></h1>
+          <button class="btn btn-red btn-lg hero-words-btn" id="heroWordsBtn" title="等餐背单词，现在就开始">
+            <svg class="ico"><use href="#i-book"/></svg>开始背单词
+          </button>
+        </div>
+        <p class="lead">路上背单词 · 到店算营养 · 等餐刷词卡。<br>每一次去麦麦，都会在下面留下痕迹。</p>
+        <div class="xp">
+          <div class="xp-head">
+            <span class="xp-title">Lv.<b data-bind="level_index">0</b> · <span data-bind="level_title2">见习麦友</span></span>
+            <span class="xp-num"><b data-bind="xp">0</b> / <span data-bind="next_need">60</span> EXP</span>
+          </div>
+          <div class="bar bar-lg"><i class="bar-fill" data-bar="level_percent" style="width:0%"></i></div>
+          <p class="xp-motto" data-bind="level_motto">刚拿到第一张取餐小票</p>
+        </div>
+        <div class="hero-mini">
+          <div><svg class="ico"><use href="#i-clock"/></svg><b data-bind="focus_minutes">0</b><span>专注分钟</span></div>
+          <div><svg class="ico"><use href="#i-shoe"/></svg><b data-bind="trips">0</b><span>出行趟数</span></div>
+          <div><svg class="ico"><use href="#i-book"/></svg><b data-bind="sessions">0</b><span>背词场次</span></div>
+        </div>
+        <p class="note" data-bind="focus_note"></p>
+      </div>
+      <div class="hero-art">
+        <div class="float float-1"><svg class="ico lg"><use href="#i-fry"/></svg></div>
+        <div class="float float-2"><svg class="ico lg"><use href="#i-drink"/></svg></div>
+        <div class="float float-3"><svg class="ico"><use href="#i-star"/></svg></div>
+        <div class="float float-4"><svg class="ico"><use href="#i-egg"/></svg></div>
+        <svg class="mascot" viewBox="-10 -16 52 52" aria-label="像素汉堡吉祥物">
+          <!-- 等级配件（厨师帽 / 薯条 / 披风…）由 app.js 按等级注入到这里 -->
+          <g class="mascot-gear" id="mascotGear"></g>
+          <g class="mascot-body">
+            <rect x="8" y="4" width="16" height="1" fill="#F2A93B"/><rect x="6" y="5" width="20" height="1" fill="#FFC72C"/>
+            <rect x="4" y="6" width="24" height="1" fill="#FFC72C"/><rect x="3" y="7" width="26" height="1" fill="#FFD24A"/><rect x="3" y="8" width="26" height="1" fill="#FFC72C"/>
+            <rect x="10" y="6" width="2" height="1" fill="#FFF3D0"/><rect x="16" y="5" width="2" height="1" fill="#FFF3D0"/><rect x="22" y="6" width="2" height="1" fill="#FFF3D0"/>
+            <rect x="2" y="9" width="28" height="2" fill="#6DBE45"/><rect x="1" y="10" width="1" height="1" fill="#6DBE45"/><rect x="30" y="10" width="1" height="1" fill="#6DBE45"/>
+            <rect x="2" y="11" width="28" height="1" fill="#FFD24A"/><rect x="4" y="12" width="3" height="1" fill="#FFD24A"/><rect x="11" y="12" width="3" height="1" fill="#FFD24A"/><rect x="18" y="12" width="3" height="1" fill="#FFD24A"/><rect x="25" y="12" width="3" height="1" fill="#FFD24A"/>
+            <rect x="2" y="12" width="28" height="3" fill="#6B3F1D"/><rect x="2" y="15" width="28" height="1" fill="#4E2B12"/>
+            <rect x="3" y="16" width="26" height="4" fill="#E4942F"/><rect x="2" y="17" width="1" height="2" fill="#E4942F"/><rect x="29" y="17" width="1" height="2" fill="#E4942F"/>
+            <rect x="4" y="20" width="24" height="1" fill="#E4942F"/><rect x="6" y="21" width="20" height="1" fill="#E4942F"/>
+            <g class="eye eye-l"><rect x="9" y="17" width="3" height="2" fill="#FFF6E0"/><rect x="10" y="17" width="1" height="2" fill="#2B1A0E"/></g>
+            <g class="eye eye-r"><rect x="20" y="17" width="3" height="2" fill="#FFF6E0"/><rect x="21" y="17" width="1" height="2" fill="#2B1A0E"/></g>
+            <rect x="7" y="19" width="2" height="1" fill="#FF8FA3"/><rect x="23" y="19" width="2" height="1" fill="#FF8FA3"/>
+            <rect x="12" y="19" width="8" height="1" fill="#2B1A0E"/><rect x="13" y="20" width="6" height="1" fill="#2B1A0E"/>
+            <rect x="0" y="13" width="2" height="2" fill="#E4942F"/><rect x="30" y="13" width="2" height="2" fill="#E4942F"/>
+          </g>
+          <g class="mascot-feet">
+            <rect x="10" y="22" width="3" height="2" fill="#E4942F"/><rect x="19" y="22" width="3" height="2" fill="#E4942F"/>
+            <rect x="8" y="24" width="6" height="2" fill="#2B1A0E"/><rect x="18" y="24" width="6" height="2" fill="#2B1A0E"/>
+            <rect x="8" y="26" width="6" height="1" fill="#DA291C"/><rect x="18" y="26" width="6" height="1" fill="#DA291C"/>
+          </g>
+        </svg>
+        <div class="shadow"></div>
+      </div>
+    </section>
+
+    <section class="cards" id="cards"></section>
+
+    <section class="grid2">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>最近 7 天</h2>
+          <div class="tabs" id="chartTabs">
+            <button class="tab is-on" data-metric="words">单词</button>
+            <button class="tab" data-metric="burn_kcal">消耗</button>
+            <button class="tab" data-metric="on_target">达标餐</button>
+          </div>
+        </div>
+        <div class="chart" id="chart"></div>
+        <p class="note" id="chartNote"></p>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h2>这一口吃了什么</h2></div>
+        <div class="macros" id="macros"></div>
+        <div class="macro-sum">
+          <div><b data-bind="kcal_in">0</b><span>累计摄入 kcal</span></div>
+          <div><b data-bind="sodium_in">0</b><span>累计钠 mg</span></div>
+          <div><b data-bind="avg_meal_kcal">0</b><span>平均每餐 kcal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>成就墙</h2><span class="tag" id="badgeCount">0 / 9</span></div>
+      <div class="badges" id="badges"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>最近的麦麦足迹</h2></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+  </section>
+
+  <!-- ===================== 出发屏（我想去麦当劳） ===================== -->
+  <section class="screen" id="screen-go">
+
+    <!-- ① 找门店 -->
+    <div class="panel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-route"/></svg>① 找最近的那家 · 顺路消耗多少</h2>
+        <span class="tag" id="go-mode-tag">步行</span>
+      </div>
+      <form class="form" id="goForm" onsubmit="return false">
+        <label>你在哪？（地址或地标）
+          <input type="text" id="go-address" placeholder="如：上海静安嘉里中心" value="上海静安嘉里中心">
+        </label>
+        <label>怎么去？
+          <select id="go-mode">
+            <option value="walk" selected>步行</option>
+            <option value="bike">骑行</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button type="button" class="btn btn-red" id="go-search">查找附近门店</button>
+          <button type="button" class="btn" id="go-locate" title="用浏览器定位算真实路线（不会上传，只在本机使用）">
+            <svg class="ico"><use href="#i-pin"/></svg>获取当前位置
+          </button>
+          <span class="note" id="go-status"></span>
+        </div>
+        <p class="note" id="go-locate-note">定位只在本机参与路线计算，不上传服务器；不定位则按门店距离估算。</p>
+      </form>
+      <div id="goStores" class="go-stores"></div>
+    </div>
+
+    <!-- ② 吃什么 -->
+    <div class="panel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-target"/></svg>② 这一餐吃什么 · 按你的目标挑</h2>
+        <span class="tag" id="go-meal-tag">午餐</span>
+      </div>
+      <div class="seg" id="goMeal">
+        <button class="seg-btn" data-meal="breakfast">早餐</button>
+        <button class="seg-btn is-on" data-meal="lunch">午餐</button>
+        <button class="seg-btn" data-meal="dinner">晚餐</button>
+        <button class="seg-btn" data-meal="snack">加餐</button>
+      </div>
+      <p class="note" id="go-meal-note">正在按当前时间判断餐次…</p>
+      <div id="goPlan" class="go-plan">
+        <p class="note">选好餐次，会按你的身高体重算出这一餐的热量、蛋白、脂肪、碳水目标，再从麦当劳营养库里挑出最贴近目标的组合。</p>
+      </div>
+      <p class="note">推荐结果由「我的档案」里的身高体重决定。
+        <button type="button" class="btn-link" id="goEditProfile">编辑身体数据</button>
+      </p>
+    </div>
+
+    <!-- ③ 去下单 -->
+    <div class="panel go-cta-panel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-burger"/></svg>③ 去下单 · 然后回来等餐</h2>
+      </div>
+      <p class="lead">下单交给麦当劳官方渠道完成——我们不碰你的钱、不代下单、不动你的账号。
+        下完单回到「等餐」，那一单会自动出现，剩下的几分钟就用来背单词。</p>
+      <button class="btn btn-mc btn-lg" id="goOrderBtn">
+        <svg class="ico"><use href="#i-burger"/></svg> It's Time to Mc
+      </button>
+      <p class="note" id="goOrderNote">跳转到麦当劳网上订餐平台（mcd.cn）</p>
+    </div>
+  </section>
+
+  <!-- ===================== 档案屏 ===================== -->
+  <section class="screen" id="screen-profile">
+    <div class="grid2">
+      <div class="panel">
+        <div class="panel-head"><h2><svg class="ico"><use href="#i-scale"/></svg>我的身体档案</h2></div>
+        <form id="profileForm" class="form">
+          <label>身高 (cm)<input type="number" id="pf-height" min="100" max="230" step="1" value="172"></label>
+          <label>体重 (kg)<input type="number" id="pf-weight" min="30" max="200" step="0.1" value="68"></label>
+          <label>年龄<input type="number" id="pf-age" min="10" max="100" step="1" value="28"></label>
+          <label>性别
+            <select id="pf-sex"><option value="male">男</option><option value="female">女</option></select>
+          </label>
+          <label>活动量
+            <select id="pf-activity">
+              <option value="sedentary">久坐（很少运动）</option>
+              <option value="light" selected>轻度（每周 1-3 次）</option>
+              <option value="moderate">中度（每周 3-5 次）</option>
+              <option value="active">高强度（每周 6-7 次）</option>
+            </select>
+          </label>
+          <label>目标
+            <select id="pf-goal">
+              <option value="lose">减脂</option>
+              <option value="maintain" selected>维持</option>
+              <option value="gain">增肌</option>
+            </select>
+          </label>
+          <div class="form-actions">
+            <button type="button" class="btn btn-red" id="pf-calc">计算 BMI 与营养目标</button>
+            <button type="button" class="btn" id="pf-save">保存档案</button>
+            <button type="button" class="btn btn-link" id="pf-back">← 返回出发</button>
+          </div>
+          <p class="note" id="pf-status"></p>
+        </form>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2><svg class="ico"><use href="#i-target"/></svg>今日营养目标</h2></div>
+        <div id="profileResult" class="profile-result">
+          <p class="note">填写左侧信息后点「计算」，会按 BMI → BMR(Mifflin-St Jeor) → TDEE → 国家营养指南分餐，给出每餐的热量、蛋白、脂肪、碳水目标。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>三餐（含加餐）目标拆分</h2><span class="tag" id="pf-daily">每日 — kcal</span></div>
+      <div class="meal-grid" id="mealGrid"></div>
+      <p class="note" id="pf-guideline"></p>
+    </div>
+  </section>
+
+  <!-- ===================== 背单词屏 ===================== -->
+  <section class="screen" id="screen-words">
+
+    <!-- 当前订单状态：背单词时实时显示最新订单（每 5 秒轮询 4.2.13 查询订单详情） -->
+    <div class="panel order-panel" id="orderPanel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-clock"/></svg>当前订单 · 实时状态</h2>
+        <span class="tag order-conn" id="orderConn">连接中…</span>
+      </div>
+      <div id="orderBody" class="order-body">
+        <p class="note">正在从麦当劳 MCP 拉取你的最新订单…</p>
+      </div>
+      <div class="order-foot">
+        <span class="order-live"><i class="pulse-dot"></i>每 5 秒自动刷新</span>
+        <span class="note" id="orderUpdated"></span>
+      </div>
+    </div>
+
+    <div class="panel" id="wordsStart">
+      <div class="panel-head"><h2><svg class="ico"><use href="#i-book"/></svg>等餐背词 · 碎片时间变词汇量</h2></div>
+      <p class="lead">等餐的 7 分钟，够刷 40 个词。选个时长，开一局四选一闯关。</p>
+      <div class="seg" id="wordsDuration">
+        <button class="seg-btn is-on" data-min="2">2 分钟</button>
+        <button class="seg-btn" data-min="5">5 分钟</button>
+        <button class="seg-btn" data-min="10">10 分钟</button>
+        <button class="seg-btn" data-min="15">15 分钟</button>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-red" id="wordsStartBtn">开始一局</button>
+        <span class="note" id="wordsBankNote"></span>
+      </div>
+    </div>
+
+    <div class="panel" id="wordsQuiz" style="display:none">
+      <div class="quiz-top">
+        <span class="chip"><svg class="ico"><use href="#i-book"/></svg>第 <b id="qIdx">1</b> / <span id="qTotal">0</span> 题</span>
+        <span class="chip chip-fire"><svg class="ico"><use href="#i-star"/></svg>对 <b id="qCorrect">0</b></span>
+        <div class="bar" style="flex:1"><i class="bar-fill" id="qProgress" style="width:0%;background-color:var(--green-l)"></i></div>
+      </div>
+      <p class="quiz-prompt" id="qPrompt">—</p>
+      <div class="quiz-opts" id="qOpts"></div>
+      <p class="quiz-feedback" id="qFeedback"></p>
+    </div>
+
+    <div class="panel" id="wordsResult" style="display:none">
+      <div class="panel-head"><h2><svg class="ico"><use href="#i-star"/></svg>本局结算</h2></div>
+      <div class="result-big" id="wordsResultBig">—</div>
+      <div id="wordsMistakes" class="mistakes"></div>
+      <div class="form-actions">
+        <button class="btn btn-red" id="wordsAgain">再来一局</button>
+        <button class="btn" id="wordsToDash">回看板</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 本餐屏 ===================== -->
+  <section class="screen" id="screen-meal">
+    <!-- 手机带出门会断网：背的词先排队，回来到同一个 WiFi 下自动补传 -->
+    <div class="panel sync-panel" id="syncPanel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-sync"/></svg>手机 ↔ 电脑同步</h2>
+        <span class="note" id="syncState">检测中…</span>
+      </div>
+      <div class="sync-body">
+        <div class="sync-text">
+          <p id="syncSummary">—</p>
+          <p class="note" id="syncHint">手机和电脑在同一个 WiFi 下，打开电脑的地址就是同一份档案，不需要同步。</p>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-red" id="syncNow">立即同步</button>
+          <button type="button" class="btn" id="syncExport">导出备份 JSON</button>
+          <label class="btn" for="syncImportFile">导入备份</label>
+          <input type="file" id="syncImportFile" accept="application/json,.json" hidden>
+        </div>
+      </div>
+      <p class="note" id="syncLan"></p>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <h2><svg class="ico"><use href="#i-burger"/></svg>我的麦当劳订单 · 一键记入成长档案</h2>
+        <span class="note" id="mealOrdersStatus"></span>
+      </div>
+      <div id="mealOrders" class="go-stores">
+        <p class="note">正在从麦当劳 MCP（order-list）读取历史订单…</p>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <div class="panel-head"><h2><svg class="ico"><use href="#i-target"/></svg>本餐目标 vs 实际</h2></div>
+        <div id="mealCompare" class="meal-compare">
+          <p class="note">先在「我的档案」算好营养目标，这里会把最近一餐的蛋白 / 热量与你的目标并排对比。</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h2><svg class="ico"><use href="#i-burger"/></svg>快捷记录一餐</h2></div>
+        <form id="mealForm" class="form">
+          <label>餐类型
+            <select id="mf-type"><option value="breakfast">早餐</option><option value="lunch" selected>午餐</option><option value="dinner">晚餐</option><option value="snack">加餐</option></select>
+          </label>
+          <label>餐厅 / 门店<input type="text" id="mf-store" placeholder="如：静安嘉里中心店" value="麦当劳"></label>
+          <label>热量 kcal<input type="number" id="mf-kcal" min="0" step="1" value="550"></label>
+          <label>蛋白质 g<input type="number" id="mf-protein" min="0" step="0.1" value="28"></label>
+          <label>脂肪 g<input type="number" id="mf-fat" min="0" step="0.1" value="22"></label>
+          <label>碳水 g<input type="number" id="mf-carb" min="0" step="0.1" value="60"></label>
+          <label>钠 mg<input type="number" id="mf-sodium" min="0" step="1" value="800"></label>
+          <div class="form-actions">
+            <button type="button" class="btn btn-red" id="mf-save">记录这一餐</button>
+            <span class="note" id="mf-status"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h2>最近记录的餐</h2></div>
+      <div class="timeline" id="mealTimeline"></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>等待时间 = 成长时间</p>
+    <p class="foot-sub">数据源：本地 SQLite（<span data-bind="db">—</span>） · 生成于 <span data-bind="generated_at">—</span> · 通过 <code>python run.py web</code> 可实时读写</p>
+  </footer>
+</main>
+
+<script src="stats.js"></script>
+<script src="words.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

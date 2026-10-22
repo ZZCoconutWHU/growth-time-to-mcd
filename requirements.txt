@@ -1,0 +1,8 @@
+# 本项目仅使用 Python 标准库（urllib / json / argparse / dataclasses），
+# 无需安装任何第三方依赖，Python >= 3.9 即可运行。
+#
+# 如需以包形式安装（可选）：
+#   pip install -e .
+#
+# 测试：
+#   python -m unittest discover -s tests -v

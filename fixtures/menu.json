@@ -1,0 +1,30 @@
+{
+  "data": {
+    "storeCode": "SH0218",
+    "categories": [
+      {
+        "name": "汉堡",
+        "meals": [
+          {"mealCode": "1001", "mealName": "巨无霸", "price": 24.0, "tags": ["经典"]},
+          {"mealCode": "1004", "mealName": "板烧鸡腿堡", "price": 23.0, "tags": ["非油炸"]},
+          {"mealCode": "1003", "mealName": "麦辣鸡腿堡", "price": 22.0, "tags": ["辣"]}
+        ]
+      },
+      {
+        "name": "小食",
+        "meals": [
+          {"mealCode": "3002", "mealName": "中薯条", "price": 12.0, "tags": []},
+          {"mealCode": "3004", "mealName": "玉米杯", "price": 11.0, "tags": ["轻食"]},
+          {"mealCode": "3005", "mealName": "鲜蔬沙拉", "price": 13.0, "tags": ["轻食"]}
+        ]
+      },
+      {
+        "name": "饮料",
+        "meals": [
+          {"mealCode": "4002", "mealName": "中杯无糖可乐", "price": 10.0, "tags": ["0糖"]},
+          {"mealCode": "4001", "mealName": "中杯可口可乐", "price": 10.0, "tags": []}
+        ]
+      }
+    ]
+  }
+}

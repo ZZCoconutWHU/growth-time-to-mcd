@@ -1,0 +1,24 @@
+{
+  "data": {
+    "foods": [
+      {"name": "巨无霸", "code": "1001", "category": "汉堡", "energy": 550, "protein": 25.0, "fat": 30.0, "carbohydrate": 42.0, "sodium": 1000, "calcium": 120, "unit": "个"},
+      {"name": "双层吉士汉堡", "code": "1002", "category": "汉堡", "energy": 450, "protein": 25.0, "fat": 24.0, "carbohydrate": 33.0, "sodium": 1100, "calcium": 200, "unit": "个"},
+      {"name": "麦辣鸡腿堡", "code": "1003", "category": "汉堡", "energy": 480, "protein": 25.0, "fat": 22.0, "carbohydrate": 44.0, "sodium": 1060, "calcium": 90, "unit": "个"},
+      {"name": "板烧鸡腿堡", "code": "1004", "category": "汉堡", "energy": 400, "protein": 27.0, "fat": 14.0, "carbohydrate": 41.0, "sodium": 820, "calcium": 80, "unit": "个"},
+      {"name": "麦乐鸡(5块)", "code": "2001", "category": "小食", "energy": 240, "protein": 14.0, "fat": 14.0, "carbohydrate": 14.0, "sodium": 420, "calcium": 20, "unit": "份"},
+      {"name": "麦辣鸡翅(2块)", "code": "2002", "category": "小食", "energy": 250, "protein": 12.0, "fat": 17.0, "carbohydrate": 13.0, "sodium": 430, "calcium": 15, "unit": "份"},
+      {"name": "大薯条", "code": "3001", "category": "小食", "energy": 470, "protein": 6.0, "fat": 22.0, "carbohydrate": 61.0, "sodium": 350, "calcium": 14, "unit": "份"},
+      {"name": "中薯条", "code": "3002", "category": "小食", "energy": 340, "protein": 4.0, "fat": 16.0, "carbohydrate": 44.0, "sodium": 250, "calcium": 10, "unit": "份"},
+      {"name": "小薯条", "code": "3003", "category": "小食", "energy": 230, "protein": 3.0, "fat": 11.0, "carbohydrate": 30.0, "sodium": 170, "calcium": 8, "unit": "份"},
+      {"name": "玉米杯", "code": "3004", "category": "小食", "energy": 90, "protein": 3.0, "fat": 1.0, "carbohydrate": 19.0, "sodium": 0, "calcium": 4, "unit": "份"},
+      {"name": "鲜蔬沙拉", "code": "3005", "category": "小食", "energy": 60, "protein": 2.0, "fat": 3.0, "carbohydrate": 6.0, "sodium": 60, "calcium": 30, "unit": "份"},
+      {"name": "苹果片", "code": "3006", "category": "小食", "energy": 35, "protein": 0.0, "fat": 0.0, "carbohydrate": 9.0, "sodium": 0, "calcium": 4, "unit": "份"},
+      {"name": "中杯可口可乐", "code": "4001", "category": "饮料", "energy": 200, "protein": 0.0, "fat": 0.0, "carbohydrate": 50.0, "sodium": 15, "calcium": 0, "unit": "杯"},
+      {"name": "中杯无糖可乐", "code": "4002", "category": "饮料", "energy": 0, "protein": 0.0, "fat": 0.0, "carbohydrate": 0.0, "sodium": 10, "calcium": 0, "unit": "杯"},
+      {"name": "中杯橙汁", "code": "4003", "category": "饮料", "energy": 150, "protein": 2.0, "fat": 0.0, "carbohydrate": 36.0, "sodium": 10, "calcium": 20, "unit": "杯"},
+      {"name": "中杯拿铁", "code": "4004", "category": "饮料", "energy": 130, "protein": 7.0, "fat": 6.0, "carbohydrate": 12.0, "sodium": 90, "calcium": 150, "unit": "杯"},
+      {"name": "甜筒", "code": "5001", "category": "甜品", "energy": 150, "protein": 4.0, "fat": 4.0, "carbohydrate": 24.0, "sodium": 70, "calcium": 100, "unit": "个"},
+      {"name": "麦旋风(奥利奥)", "code": "5002", "category": "甜品", "energy": 340, "protein": 7.0, "fat": 12.0, "carbohydrate": 50.0, "sodium": 180, "calcium": 150, "unit": "份"}
+    ]
+  }
+}
